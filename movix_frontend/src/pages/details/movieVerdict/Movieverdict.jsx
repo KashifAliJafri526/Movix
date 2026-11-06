@@ -6,7 +6,7 @@ import {
     submitMovieVerdict,
 } from "../../../utils/verdictApi";
 
-import "./MovieVerdict.scss";
+import "./Movieverdict.scss";
 
 const verdictOptions = [
     {
