@@ -1,0 +1,256 @@
+/* Login.css */
+.login-container {
+  max-width: 400px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  background-color: #93a9e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 0.5s ease;
+  height:50vh;
+  width:50vh;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+ 
+
+  box-shadow:10px 10px 100px 10px #93a9e5;
+}
+
+.login-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeInUp 0.5s ease;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background:url("https://img.freepik.com/premium-photo/blank-blue-cement-wall-texture-background_7190-199.jpg?size=626&ext=jpg&ga=GA1.1.854910880.1701414299&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-container form {
+  width: 100%;
+}
+
+.login-container label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+ 
+}
+
+.login-container button {
+  padding: 10px 15px;
+  background-color: #4935d4;
+  margin-bottom:20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  color: #fff; /* Text color */
+}
+
+.login-container button:hover {
+  background-color: rgba(0, 86, 179, 0.7);
+}
+
+.login-container .links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.login-container a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #fff; /* Text color */
+}
+
+.login-container a:hover {
+  color: rgba(0, 86, 179, 0.7);
+}
+
+/* ChangePassword.css */
+.change-password-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeInUp 0.5s ease;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+   background:url("https://img.freepik.com/premium-photo/blank-blue-cement-wall-texture-background_7190-199.jpg?size=626&ext=jpg&ga=GA1.1.854910880.1701414299&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.change-password-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: #93a9e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 0.5s ease;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+  height:70vh;
+  width:90vh;
+
+
+  box-shadow:10px 10px 100px 10px #93a9e5;
+}
+
+.change-password-container form {
+  width: 100%;
+}
+
+.change-password-container label {
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.change-password-container input[type="email"],
+.change-password-container input[type="password"],
+.change-password-container select,
+.change-password-container input[type="text"] {
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.change-password-container input[type="email"]:focus,
+.change-password-container input[type="password"]:focus,
+.change-password-container select:focus,
+.change-password-container input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.change-password-container button {
+  padding: 10px 15px;
+   background-color: #4935d4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  color: #fff; /* Text color */
+}
+
+.change-password-container button:hover {
+  background-color: rgba(0, 86, 179, 0.7);
+}
+
+/* Register.css */
+.register-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: #93a9e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 0.5s ease;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+ 
+
+  box-shadow:10px 10px 100px 10px #93a9e5;
+}
+
+.register-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeInUp 0.5s ease;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+   background:url("https://img.freepik.com/premium-photo/blank-blue-cement-wall-texture-background_7190-199.jpg?size=626&ext=jpg&ga=GA1.1.854910880.1701414299&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register-container form {
+  width: 100%;
+}
+
+.register-container label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container select,
+.register-container input[type="text"],
+.register-container input[type="number"] {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.register-container input[type="email"]:focus,
+.register-container input[type="password"]:focus,
+.register-container select:focus,
+.register-container input[type="text"]:focus,
+.register-container input[type="number"]:focus {
+  outline: none;
+ 
+  border-color: #007bff;
+}
+
+.register-container button,
+.register-container button[type="button"] {
+  padding: 10px 15px;
+   background-color: #4935d4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.9s ease;
+  width: 100%;
+  margin-bottom:20px;
+  color: #fff; /* Text color */
+}
+
+.register-container button:hover,
+.register-container button[type="button"]:hover {
+  background-color: rgba(0, 86, 179, 0.7);
+}

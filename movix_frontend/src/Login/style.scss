@@ -1,0 +1,165 @@
+@import "../mixins.scss";
+
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../../src/assets/bg2.jpg");
+    background-color: linear-gradient(135deg, #0f172a, #1e293b);
+    background-position: top center;
+    background-size: cover;
+    padding: 20px;
+
+    .authCard {
+        background-color: #1e293b;
+        padding: 40px 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 420px;
+        color: white;
+        position: relative;
+
+        h2 {
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                font-size: 14px;
+                margin-bottom: 6px;
+                opacity: 0.8;
+            }
+
+            input {
+                padding: 12px 15px;
+                border-radius: 8px;
+                border: none;
+                font-size: 14px;
+                background-color: #334155;
+                color: white;
+
+                &:focus {
+                    outline: 2px solid #f89e00;
+                    background-color: #475569;
+                }
+            }
+
+            .error {
+                color: #f87171;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+        }
+
+        .button {
+            margin-top: 10px;
+            background: linear-gradient(98.37deg, #f89e00 .99%, #da2f68 100%);
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            color: white;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: linear-gradient(98.37deg, #f89d00d9 .99%, #da2f68cf 100%);
+            }
+        }
+
+        .secondary {
+            background: transparent;
+            border: 2px solid #6366f1;
+            color: #6366f1;
+
+            &:hover {
+                background: #6366f1;
+                color: white;
+            }
+        }
+
+        .stepIndicators {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+
+            .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #64748b;
+                &.active {
+                    background: #6366f1;
+                }
+            }
+        }
+
+        .link {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+
+            a {
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+.stepIndicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #64748b;
+    transition: background 0.3s, border 0.3s;
+
+    &.active {
+      background: #6366f1;
+    }
+
+    &.completed {
+      background: linear-gradient(98.37deg, #f89e00 .99%, #da2f68 100%);
+      border: 1px solid white;
+    }
+  }
+}
+
+select {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  background-color: #334155;
+  color: white;
+  appearance: none;
+
+  &:focus {
+    outline: 2px solid #6366f1;
+    background-color: #475569;
+  }
+}
