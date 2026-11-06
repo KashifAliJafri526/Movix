@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const PORT = process.env.SERVER_PORT || 4001;
+const PORT = process.env.PORT || process.env.SERVER_PORT || 4001;
 
 const registerRoutes = require("./routes/routes");
 app.use("/signup", registerRoutes);
