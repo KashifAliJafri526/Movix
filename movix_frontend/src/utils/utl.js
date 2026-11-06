@@ -1,2 +1,2 @@
 
-export const BACKEND_SERVER_URL = "http://localhost:4001";
+export const BACKEND_SERVER_URL = "https://movix-ttsp.onrender.com";
